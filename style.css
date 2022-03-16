@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: LiberationSerif;
+    /* Имя шрифта */
+    src: url(fonts/LiberationSerif-Regular.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+}
+
+.delivery p {
+    padding: 16px 0 18px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    justify-self: center;
+}
+
+.header {
+    background-color: #996B60;
+    padding: 25px 0;
+    height: 90vh;
+    position: relative;
+    z-index: 20;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+
+.top-menu__left a:not(:last-child),
+.top-menu__right a:not(:last-child) {
+    margin-right: 60px;
+}
+
+.header a {
+    text-transform: uppercase;
+    display: inline-block;
+    transition: .2s;
+}
+
+.header a:hover {
+    transform: scale(1.2);
+}
+
+.under-header {
+    background-color: #996B60;
+}
+
+.under-header__content {
+    display: flex;
+}
+
+.under-header__left {
+    width: 50%;
+    background: url(img/header-img.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.under-header__right {
+    width: 50%;
+    transform: translateX(100%);
+    padding-left: 60px;
+    margin-top: 180px;
+    box-sizing: border-box;
+}
+
+.under-header__right h1 {
+    width: 457px;
+    font-size: 73px;
+    line-height: 96px;
+    color: #fff;
+    margin-bottom: 34px;
+    font-family: LiberationSerif;
+}
+
+.under-header__right p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 50px;
+    width: 572px;
+}
+
+.under-header__right button {
+    padding: 18px 60px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.under-header__right button:hover,
+.ingredients__item button:hover,
+.mood__playlist button:hover,
+a:hover {
+    transform: scale(1.1);
+}
+
+.feedback {
+    padding: 55px 0;
+    margin-bottom: 55px;
+}
+
+.feedback__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback__item p {
+    width: 288px;
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 18px;
+}
+
+.hr {
+    border: 1px solid #BDBDBD;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.ingredients {
+    padding: 50px 0 61px 0;
+}
+
+.ingredients h2 {
+    font-family: LiberationSerif;
+    font-size: 64px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 673px;
+    line-height: 80px;
+}
+
+.ingredients .desc {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+.ingredients__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients__good {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingrediants__img {
+    width: 381px;
+    height: 451px;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.img1 {
+    background: url(img/sampter-kit.png) no-repeat;
+}
+
+.img2 {
+    background: url(img/grapefruit.png) no-repeat;
+}
+
+.img3 {
+    background: url(img/citrus.png) no-repeat;
+}
+
+.ingredients__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    transition: .2s;
+    position: relative;
+}
+
+.ingredients__item h3 {
+    font-family: LiberationSerif;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.ingredients__item p {
+    width: 366px;
+    text-align: center;
+    margin-bottom: 27px;
+    line-height: 28px;
+}
+
+.ingredients__item button {
+    padding: 19px 49px;
+    background-color: #191919;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+
+.ingredients__item:hover {
+    box-shadow: 0px 10px 20px 10px #996B60;
+}
+
+.best-seller {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #191919;
+    text-align: center;
+    position: absolute;
+    top: 23px;
+    right: 19px;
+}
+
+.best-seller p {
+    width: 58px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aperitifs {
+    padding: 50px 0 95px 0;
+}
+
+.aperitifs__img {
+    width: 100%;
+    height: 560px;
+    background: url(img/aperetifs.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 55px;
+}
+
+.aperitifs__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aperitifs__text h2 {
+    font-family: LiberationSerif;
+    font-size: 53px;
+}
+
+.aperitifs__text p {
+    font-size: 18px;
+    line-height: 32px;
+    width: 548px;
+}
+
+.natural {
+    padding: 60px 0 50px 0;
+}
+
+.natural__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.natural__text {
+    width: 385px;
+}
+
+.natural__text h3 {
+    font-family: LiberationSerif;
+    font-size: 30px;
+    line-height: 44px;
+    margin-bottom: 25px;
+}
+
+.natural__text p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.natural__text h2 {
+    font-family: LiberationSerif;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+}
+
+.natural__img {
+    Width: 880px;
+    Height: 608px;
+    background: url(img/two-bottle.jpg) no-repeat;
+    background-size: cover;
+}
+
+.natural__text p:last-child {
+    margin: 0;
+}
+
+.feedback-people {
+    padding: 95px 0 50px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.feedback-people__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-people__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 330px;
+}
+
+.feedback-people__text {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 17px;
+}
+
+.feedback-name {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feedback-people__login {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #8a8a8a;
+}
+
+.producers {
+    padding: 60px 0;
+}
+
+.producers__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producers__img {
+    width: 550px;
+    height: 470px;
+    background: url(img/producers.png) no-repeat;
+    background-size: cover;
+}
+
+.producers__text {
+    width: 660px;
+}
+
+.producers__text h2 {
+    font-family: LiberationSerif;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 150px;
+}
+
+.producers__text p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 35px;
+}
+
+.producers__text a {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.mood {
+    height: 568px;
+    width: 100%;
+    background: url(img/the-mood.jpg) no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+.mood__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.mood__playlist {
+    background-color: #000;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mood__playlist h2 {
+    font-family: LiberationSerif;
+    font-size: 55px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.mood__playlist p {
+    width: 412px;
+    margin-bottom: 26px;
+    line-height: 28px;
+}
+
+.mood__playlist button {
+    padding: 19px 58px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    transition: .2s;
+}
+
+.mood__socials {
+    background-color: #000;
+    padding: 30px 0;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mood__socials p {
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+
+.mood__socials a:not(:last-child) {
+    margin-right: 21px;
+}
+
+.mood__socials a {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.footer {
+    padding: 45px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer__content {}
+
+.footer__up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 125px;
+}
+
+.footer__up h2 {
+    font-family: LiberationSerif;
+    font-size: 42px;
+    line-height: 72px;
+    margin-bottom: 34px;
+}
+
+.footer__post {
+    width: 440px;
+}
+
+.footer__post p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.footer__post form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-color: #191919;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.footer__post input {
+    background-color: #000;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 19px 9px;
+    flex-grow: 1;
+}
+
+.footer__post input::placeholder {
+    font-size: 9px;
+    color: #818181;
+}
+
+.footer__post button {
+    background-color: #000;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+    transition: .2s;
+}
+
+.footer__site-map {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+}
+
+.site-map__item {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.site-map__item h3 {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.site-map__item a {
+    font-size: 12px;
+    margin-bottom: 21px;
+    color: #fff;
+    opacity: 0.6;
+    transition: .2s;
+}
+
+.footer__down {
+    display: flex;
+}
+
+.footer__down p {
+    margin-right: 60px;
+    font-size: 15px;
+}
+
+.footer__down a {
+    margin-right: 60px;
+    color: #fff;
+    opacity: 0.6;
+    transition: .2s;
+}

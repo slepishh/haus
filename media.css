@@ -1,0 +1,95 @@
+@media(max-width:500px) {
+    .container {
+        width: 90%;
+    }
+    .feedback__content,
+    .ingredients__good,
+    .footer__site-map,
+    .footer__up,
+    .producers__content,
+    .feedback-people__content,
+    .natural__content,
+    .aperitifs__text,
+    .under-header__content,
+    .footer__post form,
+    .top-menu {
+        flex-direction: column;
+    }
+    .hr {
+        width: 90%;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    .footer__site-map,
+    .mood__playlist,
+    .mood__socials,
+    .producers__text,
+    .producers__img,
+    .feedback-people__item,
+    .natural__text,
+    .natural__img,
+    .aperitifs__text p,
+    .ingredients h2,
+    .ingrediants__img,
+    .ingredients__item p,
+    .under-header__right p,
+    .footer__post form,
+    .footer__post,
+    .mood__playlist p {
+        width: 100%;
+    }
+    .natural__content {
+        flex-direction: column-reverse;
+    }
+    .under-header__left {
+        position: static;
+        width: 100%;
+    }
+    .under-header__right {
+        padding: 0;
+        width: 100%;
+        transform: none;
+    }
+    .under-header__right h1 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .under-header__right p {
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+    .footer__down {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer__down a,
+    .footer__down p {
+        margin: 0;
+        font-size: 12px;
+    }
+    .footer__post input {
+        width: 100%;
+        flex-grow: 0;
+    }
+    .top-menu {
+        justify-content: center;
+        align-items: center;
+    }
+    .top-menu__left,
+    .top-menu__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-menu__left a:not(:last-child),
+    .top-menu__left a:last-child,
+    .top-menu__right a:not(:last-child),
+    .top-menu__right a:last-child {
+        margin: 12px 0;
+    }
+    .top-menu img {
+        margin: 12px 0;
+    }
+}
